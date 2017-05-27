@@ -1,0 +1,12 @@
+<recipe xmlns="http://recipy.hoverview.org/default">
+  <folder name="www">
+    <folder name="tabpanel">
+        <folder name="js">
+           <copies of="src/main/js/*"/>
+         </folder>
+         <folder name="css">
+            <copies of="src/main/css/*"/>
+      </folder>
+    </folder>
+  </folder>
+</recipe>

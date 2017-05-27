@@ -1,0 +1,43 @@
+<html version="1.1" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Tab experiments</title>
+    <link rel="stylesheet" type="text/css" href="tabs.css"/>
+    <script type="text/javascript" src="tabs.js">
+      // bollhav
+    </script>
+    <style type="text/css">
+      div.text {
+      padding: 5px;
+      margin: 5px;
+      border: solid 1px gray;
+      }
+      iframe { border: 0px; }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      This is a demo and documentation page for the tabpanel utility. It consists of a CSS and a javascript function that agree on a set of css-classes with different semantics. 
+    </div>
+    <div class="tabs">
+      <div class="tab-titles">
+	<a class="tab-title-selected" onclick="selectTab(event)">Usage</a>
+	<a class="tab-title" onclick="selectTab(event)">CSS source</a>
+	<a class="tab-title"  onclick="selectTab(event)">Javascript source</a>
+      </div>
+      <div class="tab-content-selected">
+	There are many ways one could create tab layouts in css, each with pros and cons. This utility takes the approach to use one div for the tab-panel, annotated with the <b>tabs</b> css class. This then contains one div for the clickable tab titles. This div has the class <b>tab-titles</b> and contains <b>a</b> elements with class <b>tab-title</b> or <b>tab-title-selected</b>. At most one should have the latter. After the tab-titles div there is a series of divs with classes <b>tab-content</b> and <b>tab-content-selected</b>. The selected tab content should be at the same index among tab-content elements within this tab-panel as its tab-title is within the title div. 
+      </div>
+      <div class="tab-content">
+	<iframe src="tabs.css" width="100%" height="500px">
+	  <!-- -->
+	</iframe>
+      </div>
+      <div class="tab-content">
+	<iframe src="tabs.js" width="100%" height="500px">
+	  <!-- -->
+	</iframe>
+      </div>
+    </div>
+    <div class="text">Content after tab-panel</div>
+  </body>
+</html>
