@@ -1,0 +1,4 @@
+<zipfile name="tabpanel.zip" xmlns="http://recipy.hoverview.org/default">
+  <copies of="src/main/js/*"/>
+  <copies of="src/main/css/*"/>
+</zipfile>

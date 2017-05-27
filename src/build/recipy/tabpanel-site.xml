@@ -1,9 +1,12 @@
 <recipe xmlns="http://recipy.hoverview.org/default">
   <folder name="target">
     <folder name="site">
-      <copies of="src/main/js/*"/>
-      <copies of="src/main/css/*"/>
-      <copies of="src/main/html/*"/>
+      <folder name="tabpanel">
+        <copies of="src/main/html/*"/>
+        <unzipped>
+          <artifact name="pkg"/>
+        </unzipped>
+      </folder>
     </folder>
   </folder>
 </recipe>
