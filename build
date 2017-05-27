@@ -9,3 +9,4 @@ if [ -d ./reci.py ]
     echo ./reci.py >> .gitignore
 fi
 ./reci.py/src/main/python/reci.py site
+./reci.py/src/main/python/reci.py pkg
